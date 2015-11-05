@@ -148,6 +148,37 @@ ol {
         border-bottom: 1px solid rgba($light, 0.3);
     }
 }
+@-webkit-keyframes flash {
+        0%, 50%, 100% {opacity: 1;}
+            25%, 75% {opacity: 0;}
+
+}
+@keyframes flash {
+        0%, 50%, 100% {opacity: 1;}
+            25%, 75% {opacity: 0;}
+
+}
+.flash {
+         -webkit-animation-name: flash;
+         animation-name: flash;
+         opacity: 1;
+
+}
+.intro .bg {
+    background: url( {{ site.background-img }} ) no-repeat bottom center scroll;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: $light;
+    background-color: $dark;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 .intro {
     display: table;
@@ -155,13 +186,6 @@ ol {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: $light;
-    background: url( {{ site.background-img }} ) no-repeat bottom center scroll;
-    background-color: $dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
     .intro-body {
         display: table-cell;
         vertical-align: middle;
