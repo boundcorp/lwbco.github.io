@@ -149,20 +149,27 @@ ol {
     }
 }
 @-webkit-keyframes flash {
-        0%, 50%, 100% {opacity: 1;}
-            25%, 75% {opacity: 0;}
-
+        0% {opacity: 0;}
+        100% {opacity: 1;}
 }
 @keyframes flash {
-        0%, 50%, 100% {opacity: 1;}
-            25%, 75% {opacity: 0;}
-
+        0% {opacity: 0;}
+        100% {opacity: 1;}
 }
 .flash {
-         -webkit-animation-name: flash;
-         animation-name: flash;
-         opacity: 1;
-
+     -webkit-animation-name: flash;
+     animation-name: flash;
+     opacity: 0;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
 }
 .intro .bg {
     background: url( {{ site.background-img }} ) no-repeat bottom center scroll;
