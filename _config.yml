@@ -41,13 +41,13 @@ me-img: "/img/baktats.png"
 
 dynamic-typing: True
 shuffle: True	# Shuffle the lines.
-loop: True
+loop: False
 loop-count:	False # Set False for infinite loop, or set any number for finite loop.
 type-speed:	10		# Default 10
 start-delay: 200	# Default 200
 delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
-  - text: "Beyond Full-Stack Consulting"
+  - text: "Growth-hacking + Marketing<br />Dev-ops + Automation<br />Workforce Optimization<br />Beyond Full-Stack Consulting<br />Established 2008"
 
 ########
 # Blog #
@@ -113,8 +113,8 @@ social:
 
 pages_list:
   About: 'about'
-  Blog: 'blog'
-  Career: 'career'
+#  Blog: 'blog'
+#  Career: 'career'
   Contact: 'contact'
 
 # Pagination path
