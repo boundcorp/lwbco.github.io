@@ -12,27 +12,15 @@
 
     {% include header.html %}
 
-    {% for page in site.pages %}
+    {% include about.html %}
 
-      {% if page.section-type == "about" %}
+    {% include specialization.html %}
 
-        {% include about.html %}
+    {% include portfolio.html %}
 
-      {% elsif page.section-type == "latest-post" %}
+    {% include project-method.html %}
 
-      <!--% include latest-post.html %-->
-
-      {% elsif page.section-type == "career" %}
-
-      <!--% include career.html %-->
-
-      {% elsif page.section-type == "contact" %}
-
-        {% include contact.html %}
-
-      {% endif %}
-
-    {% endfor %}
+    {% include contact.html %}
 
     {% include footer.html %}
 

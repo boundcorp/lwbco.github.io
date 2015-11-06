@@ -114,6 +114,7 @@ social:
 
 pages_list:
   About: 'about'
+  Portfolio: 'portfolio'
 #  Blog: 'blog'
 #  Career: 'career'
   Contact: 'contact'

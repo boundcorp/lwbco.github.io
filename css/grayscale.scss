@@ -190,8 +190,8 @@ ol {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+    height: 100%;
+    padding: 0;
     text-align: center;
     .intro-body {
         display: table-cell;
@@ -208,8 +208,6 @@ ol {
 
 @media(min-width:767px) {
     .intro {
-        height: 100%;
-        padding: 0;
         .intro-body {
             .brand-heading {
                 font-size: 100px;
@@ -296,7 +294,7 @@ ol {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .download-section {
@@ -313,7 +311,7 @@ ol {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 150px;
+        padding-top: 100px;
     }
 
     .download-section {
@@ -324,6 +322,28 @@ ol {
         height: 400px;
         margin-top: 150px;
     }
+}
+h2 {
+    position: relative;
+    margin-bottom: 1em;
+    font-weight: 400;
+  text-shadow:
+    -2px -2px 2px #111,
+    2px -2px 2px #111,
+    -2px 2px 2px #111,
+    2px 2px 2px #111; 
+}
+h2:before {
+    content: "";
+    position: absolute;
+		z-index: -1;
+    top: 0em;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: url( {{ site.background-img }} ) no-repeat top right local;
+    opacity: .75;
+    /*border-bottom: 4px solid #111;*/
 }
 
 ul.banner-social-buttons {
