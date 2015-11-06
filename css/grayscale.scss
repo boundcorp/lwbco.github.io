@@ -323,21 +323,20 @@ ol {
         margin-top: 150px;
     }
 }
-h2 {
+h2, .intro {
+  text-shadow:
+    3px 3px 3px #333; 
+}
+h2{
     position: relative;
     margin-bottom: 1em;
     font-weight: 400;
-  text-shadow:
-    -2px -2px 2px #111,
-    2px -2px 2px #111,
-    -2px 2px 2px #111,
-    2px 2px 2px #111; 
 }
 h2:before {
     content: "";
     position: absolute;
 		z-index: -1;
-    top: 0em;
+    top: 0.025em;
     left: 0;
     width: 100%;
     height: 30px;
