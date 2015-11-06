@@ -4,6 +4,14 @@
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  bottom: auto;
+}
+.carousel {
+    text-align: top;
+}
+.carousel-caption ul {
+    vertical-align: center;
+    font-size: 1.2em;
 }
 
 /* Declare heights because of positioning of img element */
@@ -12,12 +20,12 @@
 }
 @media(min-width:640px) {
     .carousel .item {
-      height: 400px;
+      height: 450px;
     }
 }
 @media(min-width:800px) {
     .carousel .item {
-      height: 350px;
+      height: 400px;
     }
 }
 .carousel-inner > .item > img {
